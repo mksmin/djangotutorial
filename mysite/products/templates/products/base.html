@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Base Title
+        {% endblock %}
+    </title>
+</head>
+<body>
+{% block body %}
+    Base Body
+{% endblock %}
+<br>
+<div>
+    {% now "H:i (l)" %}
+</div>
+<div>
+    {% now "E" as current_month %}
+    this month is {{ current_month }}
+</div>
+</body>
+</html>
